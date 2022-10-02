@@ -5,7 +5,7 @@ import { sample_foods, sample_tags } from "./data";
 const app = express()
 app.use(cors({
     credentials: true,
-    origin: ["http://localhost:4200"]
+    origin: ["http://127.0.0.1:4200"]
 }))
 
 app.get('/api/foods', (req, res) => {
