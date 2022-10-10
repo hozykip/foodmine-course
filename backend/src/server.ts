@@ -47,8 +47,6 @@ app.post('/api/users/login', (req, res) => {
     } else {
         res.status(400).send("Username or password is not valid")
     }
-
-
 })
 
 const generateTokenResponse = (user: any) => {
